@@ -1,15 +1,18 @@
 #!/bin/bash
 
 
-# Creates hard links from config files
+# Creates symbolic links from config files
 
 # The first argument is the original file,
-# the second is the hard link
+# the second is the link
 
-# This will OVERWRITE any existing config files
-# in ~/ at the paths specified below with the versions
-# contained in this repo
+# In the event a file already exists
+# at the desired link location, the user
+# will be prompted to overwrite
 
+
+# Absolute path to repo
+DIR="$(dirname "$(readlink -f "$0")")"
 
 # i3
-ln -f .config/i3/config ~/.config/i3/config
+ln --symbolic --interactive ${DIR}/.config/i3/config ~/.config/i3/config
