@@ -75,6 +75,9 @@ bindsym $mod+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
+# default container layout
+workspace_layout tabbed
+
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
@@ -175,11 +178,11 @@ bar {
         colors {
 	        statusline	#999999
 	        background	#252525
-	
+
         # class                 border 		backgrd 	text
         focused_workspace       #292929         #292929 	#cccccc
         active_workspace        #252525 	#252525 	#696f89
-        inactive_workspace      #252525 	#252525         #6b6b6b 
+        inactive_workspace      #252525 	#252525         #6b6b6b
         urgent_workspace        #252525 	#252525 	#c7a551
    }
 }
