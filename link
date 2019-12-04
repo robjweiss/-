@@ -16,3 +16,6 @@ DIR="$(dirname "$(readlink -f "$0")")"
 
 # i3
 ln --symbolic --interactive ${DIR}/.config/i3/config ~/.config/i3/config
+
+# .bashrc
+ln --symbolic --interactive ${DIR}/.bashrc ~/.bashrc
