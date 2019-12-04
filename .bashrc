@@ -24,6 +24,9 @@ export ANDROID_SDK_HOME=$HOME/.android
 # Go
 export PATH=$PATH:~/go/bin
 
+# Git Bash Completion
+source /usr/share/git/completion/git-completion.bash
+
 # Open Room Scripts
 export PATH=$PATH:~/openroom/bin
 
