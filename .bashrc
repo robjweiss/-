@@ -27,6 +27,9 @@ export PATH=$PATH:~/go/bin
 # Git Bash Completion
 source /usr/share/git/completion/git-completion.bash
 
+# Kubernetes command-line tool bash completion
+source <(kubectl completion bash)
+
 # Open Room Scripts
 export PATH=$PATH:~/openroom/bin
 
