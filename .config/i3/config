@@ -120,6 +120,9 @@ bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
+# switch between the current and previously focused workspace
+bindsym $mod+Tab workspace back_and_forth
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
@@ -131,6 +134,9 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
+
+# move focused container to previously focused workspace
+bindsym $mod+Shift+Tab move container to workspace back_and_forth
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -209,3 +215,9 @@ client.focused_inactive #191919 #191919 #999999
 client.unfocused        #191919 #191919 #999999
 client.urgent           #cd989a #cd989a #2e3436
 client.background       #121212
+
+
+# URxvt
+
+# always open URxvt floating
+for_window [class="URxvt"] floating enable
