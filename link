@@ -12,10 +12,29 @@
 
 
 # Absolute path to repo
-DIR="$(dirname "$(readlink -f "$0")")"
+REPO_DIR="$(dirname "$(readlink -f "$0")")"
 
-# i3
-ln --symbolic --interactive ${DIR}/.config/i3/config ~/.config/i3/config
+# Paths relative to ~/
+FILES=(
 
-# .bashrc
-ln --symbolic --interactive ${DIR}/.bashrc ~/.bashrc
+    ######
+    # i3 #
+    ######
+    '.config/i3/config'
+
+    ########
+    # bash #
+    ########
+    '.bashrc'
+
+    ##############
+    # Xresources #
+    ##############
+    '.Xresources'
+
+)
+
+for FILE in "${FILES[@]}"
+do
+    ln --symbolic --interactive "$REPO_DIR/$FILE" "$HOME/$FILE"
+done
