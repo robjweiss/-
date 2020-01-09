@@ -1,0 +1,20 @@
+! Colors
+*background: #FAFAFA
+*foreground: #6C7680
+*cursorColor: #FF8F40
+
+
+! URxvt
+
+! Geometry
+URxvt*geometry:  72x22+0+0
+
+! Font
+URxvt.font:     xft:dejavu sans mono:size=12:antialias=true
+URxvt.boldFont: xft:dejavu sans mono:bold:size=12:antialias=true
+
+! Scrollbar
+URxvt.scrollBar: false
+
+! Clear the terminal
+URxvt.keysym.Shift-Delete: command:\033c
