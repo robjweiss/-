@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "Ayu Light Bordered",
+    "window.zoomLevel": 1,
+    "window.restoreWindows": "all",
+    "terminal.integrated.scrollback": 10000,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.trimTrailingWhitespace": true,
+    "window.menuBarVisibility": "toggle",
+    "workbench.iconTheme": "ayu",
+    "workbench.activityBar.visible": false,
+    "git.enableStatusBarSync": false,
+    "workbench.statusBar.visible": false,
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false
+}

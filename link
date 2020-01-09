@@ -32,6 +32,12 @@ FILES=(
     ##############
     '.Xresources'
 
+    ###########
+    # VS Code #
+    ###########
+    '.config/Code - OSS/User/keybindings.json'
+    '.config/Code - OSS/User/settings.json'
+
 )
 
 for FILE in "${FILES[@]}"
