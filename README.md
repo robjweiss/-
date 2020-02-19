@@ -6,6 +6,13 @@ This repo replicates the structure of `~/`.
 
 Each file in `~/` is meant to be symlinked to a config here.
 
+## Dependencies
+- bash
+- URxvt
+- i3
+- capitaine-cursors
+- VS Code
+
 ## Initilizing
 A new system can be initialized to use these config files by running the `link` script.
 
