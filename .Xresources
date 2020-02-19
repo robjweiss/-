@@ -1,4 +1,8 @@
-! Colors
+! Cursor Theme
+Xcursor.theme: capitaine-cursors
+
+
+! Term Colors
 *background: #FAFAFA
 *foreground: #6C7680
 *cursorColor: #FF8F40
